@@ -4,7 +4,7 @@
 
 This project showcases a data pipeline built to analyze deforestation trends in Jammu and Kashmir using data from Global Forest Watch. The pipeline leverages multiple technologies to ingest, process, and visualize forest loss data. By combining data from APIs, PostgreSQL, Apache Spark, and Grafana, this project provides meaningful insights into forest cover changes over time.
 
----
+
 
 ## Data Source
 
@@ -14,7 +14,7 @@ We use the dataset provided by [Global Forest Watch](https://www.globalforestwat
 
 - **IND.xlsx**: Contains annual deforestation metrics over multiple years.
 
----
+
 
 ## Project Goals
 
@@ -23,7 +23,7 @@ We use the dataset provided by [Global Forest Watch](https://www.globalforestwat
 3. **Data Visualization**: Create interactive Grafana dashboards to visualize deforestation metrics and support decision-making.
 4. **Efficiency Optimization**: Implement distributed processing with Spark to handle larger datasets efficiently.
 
----
+
 
 ## Tech Stack
 
@@ -33,7 +33,7 @@ We use the dataset provided by [Global Forest Watch](https://www.globalforestwat
 - **Grafana**: Visualizes processed data, allowing users to track deforestation trends interactively.
 - **Docker**: Manages PostgreSQL, Spark, and Grafana containers for a seamless setup.
 
----
+
 
 ## Setup Instructions
 
@@ -53,17 +53,17 @@ Run the data_ingestion.py script to load IND.xlsx data into PostgreSQL.
 Use spark_processing.py to process data within a Spark DataFrame. Aggregations and transformations will be saved back to PostgreSQL.
 
 5.	Grafana Setup:
-	•	Import grafana_dashboard.json into Grafana to set up the dashboard.
-	•	Connect Grafana to PostgreSQL for visualization.
+Import grafana_dashboard.json into Grafana to set up the dashboard.
+Connect Grafana to PostgreSQL for visualization.
 
 ## Data Pipeline
 
 The pipeline follows these steps:
 
-	1.	Data Ingestion: Loads deforestation data into PostgreSQL.
-	2.	Distributed Processing: Apache Spark aggregates large datasets by year, region, or other factors.
-	3.	Storage: Processed data is stored in PostgreSQL for easy querying.
-	4.	Visualization: Grafana provides interactive visualizations to analyze trends over time.
+1.	Data Ingestion: Loads deforestation data into PostgreSQL.
+2.	Distributed Processing: Apache Spark aggregates large datasets by year, region, or other factors.
+3.	Storage: Processed data is stored in PostgreSQL for easy querying.
+4.	Visualization: Grafana provides interactive visualizations to analyze trends over time.
 
 ## SQL Queries for Grafana
 
